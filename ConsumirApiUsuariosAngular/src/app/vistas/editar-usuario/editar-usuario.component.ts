@@ -13,6 +13,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class EditarUsuarioComponent implements OnInit {
 
   usuario: ListaUsuariosI;
+  
   editarFormUsuario = new FormGroup({
     id: new FormControl(''),
     nombre: new FormControl(''),

@@ -24,12 +24,20 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  saveUsuario() {
+    this.router.navigate(['nuevoUsuario']);
+  }
+
   updateUsuario(id) {
     this.router.navigate(['editarUsuario', id]);
   }
 
-  saveUsuario() {
-    this.router.navigate(['nuevoUsuario']);
+  verDirecciones(id) {
+    this.router.navigate(['verDirecciones', id]);
+  }
+
+  irADirecciones() {
+    this.router.navigate(['direcciones']);
   }
 
 }
